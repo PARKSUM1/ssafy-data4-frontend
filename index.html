@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SamBot</title>
+  <title>BlueBot</title>
   <link rel="stylesheet" href="index.bd810733.css">
   <style>
     body {
@@ -23,11 +23,8 @@
       color: #1565c0;
     }
     #chat-container {
-      background-color: #ffffff; /* 채팅 영역 배경 */
+      background-color: #bbdefb; /* 채팅 영역 배경 */
       padding: 20px;
-      border: 1px solid #90caf9; /* 연한 파란색 테두리 */
-      border-radius: 8px; /* 부드러운 모서리 */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 */
     }
     footer {
       background-color: #ffffff;
@@ -56,8 +53,8 @@
 <body class="flex flex-col h-screen">
   <header class="flex items-center justify-between p-4">
     <div class="flex items-center space-x-4">
-      <h1 class="font-semibold text-xl">SamBot</h1>
-      <button id="new-chat-btn" class="px-3 py-1 rounded">+ New Chat</button>
+      <h1 class="font-semibold text-xl">Living in Samsung</h1>
+      <button id="new-chat-btn" class="px-3 py-1 rounded">New Chat</button>
     </div>
   </header>
   <main id="chat-container" class="chat-scroll flex-1 overflow-y-auto">
@@ -66,8 +63,8 @@
     <form id="message-form" class="flex items-center space-x-2">
       <input type="text" id="user-input" class="flex-1 p-2 rounded-md" placeholder="Type your message..." required>
       <select id="api-selector" class="p-2 rounded-md">
-        <option value="naive" selected>Naive (/chat)</option>
-        <option value="assistant">Assistant (/assistant)</option>
+        <option value="naive" selected>Naive</option>
+        <option value="assistant">Assistant</option>
       </select>
       <button type="submit" class="px-4 py-2 rounded-md">Send</button>
     </form>
